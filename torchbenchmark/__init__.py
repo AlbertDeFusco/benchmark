@@ -42,8 +42,8 @@ class add_path:
             pass
 
 
-with add_path(str(REPO_PATH)):
-    from utils import get_pkg_versions, TORCH_DEPS
+#with add_path(str(REPO_PATH)):
+    #from utils import get_pkg_versions, TORCH_DEPS
 
 this_dir = pathlib.Path(__file__).parent.absolute()
 model_dir = "models"
