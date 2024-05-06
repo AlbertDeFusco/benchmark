@@ -199,6 +199,7 @@ class Model(BenchmarkModel):
         )
         self.model = netD
         if test == "train":
+            self.inference_just_descriminator = True
             # Setup Adam optimizers for both G and D
             self.optimizerD = optim.Adam(netD.parameters(), lr=lr, betas=(beta1, 0.999))
             self.optimizerG = optim.Adam(
